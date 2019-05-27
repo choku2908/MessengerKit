@@ -43,8 +43,8 @@ open class MSGMessengerViewController: UIViewController {
     
     // MARK: - Private Properties
     
-    /// The layout guide for the keyboard
-    private let keyboardLayoutGuide = KeyboardLayoutGuide()
+    /// The layout guide for the keyboard (public)
+    public let keyboardLayoutGuide = KeyboardLayoutGuide()
     
     /// Sizes of the bubbles will be cached here for styles that use them
     internal var cachedSizes = [Int:CGSize]()
