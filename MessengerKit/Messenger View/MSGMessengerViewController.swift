@@ -14,6 +14,8 @@ import UIKit
 /// If you wish to use your own `MSGCollectionView` or  `MSGInputView` subclass please use the appropriate initializer or subclass.
 open class MSGMessengerViewController: UIViewController {
 
+    public var vBottomContainer: UIView?
+    
     // MARK: - Subviews
     
     /// The input view that's used within the messenger
@@ -142,6 +144,8 @@ open class MSGMessengerViewController: UIViewController {
         view?.backgroundView.backgroundColor = style.inputViewBackgroundColor
         view?.add(collectionView)
         view?.add(messageInputView)
+        
+        self.vBottomContainer = view?.vBottomContainer
         
         self.view = view
     }
