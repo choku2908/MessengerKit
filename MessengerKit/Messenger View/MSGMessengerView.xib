@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,6 +31,13 @@
                     <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
                     <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DSa-Qt-xaf">
+                    <rect key="frame" x="0.0" y="619" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" placeholder="YES" id="ILb-GK-gIi"/>
+                    </constraints>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Tz-SA-1GJ">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
                 </view>
@@ -39,21 +46,25 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Obg-rP-djA" secondAttribute="trailing" id="8RA-e1-k0X"/>
                 <constraint firstItem="5gI-pS-Uc8" firstAttribute="bottom" secondItem="8ZW-h7-1jb" secondAttribute="bottom" id="Bvj-Kl-sDd"/>
+                <constraint firstItem="Obg-rP-djA" firstAttribute="top" secondItem="DSa-Qt-xaf" secondAttribute="bottom" id="DoY-iL-6zf"/>
                 <constraint firstItem="5gI-pS-Uc8" firstAttribute="top" secondItem="Obg-rP-djA" secondAttribute="bottom" id="Qgj-aW-4hG"/>
-                <constraint firstItem="Obg-rP-djA" firstAttribute="top" secondItem="4Tz-SA-1GJ" secondAttribute="bottom" id="Sgq-jf-JXB"/>
                 <constraint firstItem="4Tz-SA-1GJ" firstAttribute="top" secondItem="8ZW-h7-1jb" secondAttribute="top" id="Uxu-Cd-YF9"/>
                 <constraint firstItem="MUM-xv-iLR" firstAttribute="trailing" secondItem="4Tz-SA-1GJ" secondAttribute="trailing" id="Zsl-Pr-fCo"/>
                 <constraint firstItem="Obg-rP-djA" firstAttribute="leading" secondItem="8ZW-h7-1jb" secondAttribute="leading" id="cjn-aw-OPT"/>
                 <constraint firstItem="5gI-pS-Uc8" firstAttribute="leading" secondItem="8ZW-h7-1jb" secondAttribute="leading" id="dTC-O9-HRr"/>
+                <constraint firstItem="DSa-Qt-xaf" firstAttribute="leading" secondItem="MUM-xv-iLR" secondAttribute="leading" id="f1Y-vJ-DSt"/>
                 <constraint firstItem="5gI-pS-Uc8" firstAttribute="trailing" secondItem="8ZW-h7-1jb" secondAttribute="trailing" id="fKu-7Q-9Fc"/>
                 <constraint firstItem="4Tz-SA-1GJ" firstAttribute="leading" secondItem="MUM-xv-iLR" secondAttribute="leading" id="jFV-Zj-GAv"/>
+                <constraint firstItem="DSa-Qt-xaf" firstAttribute="top" secondItem="4Tz-SA-1GJ" secondAttribute="bottom" id="oEi-MI-COT"/>
                 <constraint firstItem="Obg-rP-djA" firstAttribute="bottom" secondItem="MUM-xv-iLR" secondAttribute="bottom" placeholder="YES" id="oRa-U2-UXa"/>
+                <constraint firstItem="MUM-xv-iLR" firstAttribute="trailing" secondItem="DSa-Qt-xaf" secondAttribute="trailing" id="sqO-U6-kFE"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="MUM-xv-iLR"/>
             <connections>
                 <outlet property="backgroundView" destination="5gI-pS-Uc8" id="HYR-Og-gKz"/>
                 <outlet property="collectionViewContainer" destination="4Tz-SA-1GJ" id="Zib-MR-mKD"/>
                 <outlet property="inputViewContainer" destination="Obg-rP-djA" id="faN-O8-nLQ"/>
+                <outlet property="vBottomContainer" destination="DSa-Qt-xaf" id="1Tw-mQ-ZRM"/>
             </connections>
             <point key="canvasLocation" x="32" y="-125"/>
         </view>

@@ -10,13 +10,15 @@ import UIKit
 
 /// Internal class used to load the collection view and input view for `MSGMessengerView`.
 /// This view simply contains two containers and is loaded from the `MSGMessengerView` nib.
-class MSGMessengerView: UIView {
+open class MSGMessengerView: UIView {
     
     @IBOutlet weak var backgroundView: UIView!
     
     @IBOutlet weak var collectionViewContainer: UIView!
     
     @IBOutlet weak var inputViewContainer: UIView!
+    
+    @IBOutlet weak var vBottomContainer: UIView!
 
     func add(_ collectionView: MSGCollectionView) {
         
