@@ -133,6 +133,10 @@ open class MSGMessengerViewController: UIViewController {
         super.traitCollectionDidChange(previousTraitCollection)
         
         // We clear the cached sizes when the collection view changes
+        clearCachedSizes()
+    }
+
+    public func clearCachedSizes() {
         cachedSizes = [:]
     }
     
