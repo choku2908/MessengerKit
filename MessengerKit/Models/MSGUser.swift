@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// Objects representing a user within MessengerKit
 /// Must conform to this protocol.
